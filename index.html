@@ -1,467 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Capstone Project 2024</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script
-      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Google fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <!-- Core theme CSS (includes Bootstrap)-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DDoS Analysis & Mitigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav
-      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-      id="mainNav"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">Capstone 2024</a>
-        <button
-          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio"
-                >Images</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"
-                >Team</a
-              >
-            </li>
-          </ul>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Analysis and Mitigation of DDoS attacks
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-      <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image-->
-        <!--<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />-->
-        <!-- Masthead Heading-->
-        <h1 class="masthead-heading mb-0">
-          Analysis and Mitigation of DDoS Attacks
-        </h1>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-          <div class="divider-custom-line"></div>
-        </div>
-      </div>
-    </header>
-    <!-- Images Section-->
-    <section class="page-section portfolio" id="portfolio">
-      <div class="container">
-        <!-- Images Section Heading-->
-        <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
-        >
-          Images
-        </h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
-          <!-- Portfolio Item 1-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal1"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="public/Description.png"
-                alt="..."
-              />
-            </div>
-          </div>
-          <!-- Portfolio Item 2-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal2"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="public/Simulation.png"
-                alt="..."
-              />
-            </div>
-          </div>
-          <!-- Portfolio Item 3-->
-          <div class="col-md-6 col-lg-4 mb-5">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal3"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="public/Setup.png"
-                alt="..."
-              />
-            </div>
-          </div>
-          <!-- Portfolio Item 4-->
-          <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal4"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="assets/img/portfolio/game.png"
-                alt="..."
-              />
-            </div>
-          </div> -->
-          <!-- Portfolio Item 5-->
-          <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal5"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="assets/img/portfolio/safe.png"
-                alt="..."
-              />
-            </div>
-          </div> -->
-          <!-- Portfolio Item 6-->
-          <!-- <div class="col-md-6 col-lg-4">
-            <div
-              class="portfolio-item mx-auto"
-              data-bs-toggle="modal"
-              data-bs-target="#portfolioModal6"
-            >
-              <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"
-              >
-                <div
-                  class="portfolio-item-caption-content text-center text-white"
-                >
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img
-                class="img-fluid"
-                src="assets/img/portfolio/submarine.png"
-                alt="..."
-              />
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-      <div class="container">
-        
-        <!-- About Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-white">
-          About
-        </h2>
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-        </div>
 
-        <!-- About Section Content-->
-        <div class="row">
-          <div class="col-lg-12">
-           
-            <p class="lead">
-              Our platform is designed to simulate and mitigation DDoS attacks through an integrated approach that leverages machine learning for autonomous functionality. Unlike conventional solutions that rely on separate tools for attack simulation, analysis, and mitigation, our system unifies these capabilities into a single, cohesive framework. This allows cybersecurity teams to conduct real-time simulations, analyze vulnerabilities, and implement defenses without using multiple platforms.
-            </p>
-            <p class="lead">
-              Our solution primarily could serve small to medium-sized businesses by providing an affordable, streamlined security solution that replaces the need for numerous services. By consolidating offensive and defensive capabilities, we empower users to identify, simulate, and mitigate threats efficiently. 
-            </p>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">Analysis and Mitigation of DDoS Attacks</h1>
+            <p class="lead mb-4">An integrated platform for simulating, analyzing, and mitigating DDoS attacks using machine learning</p>
+            <a href="https://github.com/Capstone24UPRM" class="btn btn-light btn-lg">View on GitHub</a>
         </div>
-      </div>
-    </section>
-    <!-- Team Section-->
-    <section class="page-section" id="contact">
-      <div class="container">
-        <!-- Contact Section Heading-->
-        <h2
-          class="page-section-heading text-center text-uppercase text-secondary mb-0"
-        >
-          Team
-        </h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-          <div class="divider-custom-line"></div>
-          
-        </div>
-
-        <!-- Team Cards -->
-    <div class="row">
-        <!-- Team Member 1 -->
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Argenis G. Olivo</h5>
-              <p class="card-text">AI/ML Engineer: Research, Design and Implementation for ML Model</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 2 -->
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Jorge L. Perez</h5>
-              <p class="card-text">Networks Engineer: Integrate and Develop DDoS Mitigation Strategies</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 3 -->
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Juliam J. Rodriguez</h5>
-              <p class="card-text">Backend Engineer: Develop Back-End and Database Logic</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Team Member 4 -->
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Mark A. Toro</h5>
-              <p class="card-text">Full-Stack Developer: Develop Front-End and Back-End Logic</p>
-            </div>
-          </div>
-        </div>
-        <!-- Contact Section Form-->
-      </div>
     </section>
 
-    <!-- Visit GitHub Section-->
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-          <h4 class="text-uppercase mt-2"><small>Visit GitHub page!</small>
-            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Capstone24UPRM"
-              ><i class="fab fa-fw fa-github"></i
-            ></a>
-          </h4>
-      </div>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div
-    class="portfolio-modal modal fade"
-    id="portfolioModal1"
-    tabindex="-1"
-    aria-labelledby="portfolioModal1"
-    aria-hidden="true"
-    >
-    <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-        <div class="modal-header border-0">
-        <button
-            class="btn-close"
-            type="button"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-        ></button>
-        </div>
-        <div class="modal-body p-0">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="text-secondary text-uppercase mb-3 text-center">Description</h2>
-                <!-- Portfolio Modal - Image -->
-                <img
-                class="img-fluid rounded"
-                src="public/Description.png"
-                alt="Larger view"
-                />
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </div>
 
-    <!-- Portfolio Modal 2-->
-    <div
-    class="portfolio-modal modal fade"
-    id="portfolioModal2"
-    tabindex="-1"
-    aria-labelledby="portfolioModal2"
-    aria-hidden="true"
-    >
-    <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-        <div class="modal-header border-0">
-        <button
-            class="btn-close"
-            type="button"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-        ></button>
-        </div>
-        <div class="modal-body p-0">
-        <div class="container-fluid">
+<!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
             <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="text-secondary text-uppercase mb-3 text-center">Simulation</h2>
-                <!-- Portfolio Modal - Image -->
-                <img
-                class="img-fluid rounded"
-                src="public/Simulation.png"
-                alt="Larger view"
-                />
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
-    </div>
+                <p class="lead about-text">
+                    Our platform is designed to simulate and mitigate DDoS attacks through an integrated approach that leverages machine learning for autonomous functionality. Unlike conventional solutions that rely on separate tools for attack simulation, analysis, and mitigation, our system unifies these capabilities into a single, cohesive framework. This allows cybersecurity teams to conduct real-time simulations, analyze vulnerabilities, and implement defenses without using multiple platforms.
 
-    <!-- Portfolio Modal 3-->
-    <div
-    class="portfolio-modal modal fade"
-    id="portfolioModal3"
-    tabindex="-1"
-    aria-labelledby="portfolioModal3"
-    aria-hidden="true"
-    >
-    <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-        <div class="modal-header border-0">
-        <button
-            class="btn-close"
-            type="button"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-        ></button>
-        </div>
-        <div class="modal-body p-0">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="text-secondary text-uppercase mb-3 text-center">Setup</h2>
-                <!-- Portfolio Modal - Image -->
-                <img
-                class="img-fluid rounded"
-                src="public/Setup.png"
-                alt="Larger view"
-                />
-            </div>
+                    Our solution primarily could serve small to medium-sized businesses by providing an affordable, streamlined security solution that replaces the need for numerous services. By consolidating offensive and defensive capabilities, we empower users to identify, simulate, and mitigate threats efficiently.
+                </p>
             </div>
         </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Key Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">ML-Powered Analysis</h5>
+                            <p class="card-text">Autonomous detection and analysis of DDoS attacks using advanced machine learning algorithms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-time Simulation</h5>
+                            <p class="card-text">Conduct real-time attack simulations to identify and analyze system vulnerabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Integrated Defense</h5>
+                            <p class="card-text">Unified framework for attack simulation, analysis, and mitigation strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
-    <!-- Bootstrap core JS-->
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">Our Team</h2>
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member text-center">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E35AQHECPOpm3A8YQ/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1726012618160?e=1733677200&v=beta&t=6hbAgyVBi8tZY4b6jiIIGGK6CA8CwRSYqXcotGZnpVs" class="rounded-circle mb-3" alt="Argenis">
+                        <h5>Argenis G. Olivo</h5>
+                        <p>AI/ML Engineer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member text-center">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEw1kmpCc4lFw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730218297105?e=1738800000&v=beta&t=ZkynW1a9NPZ0sU9y9RLqdcs5sfWk8lAhKPGmzHsQZwE" class="rounded-circle mb-3" alt="Jorge">
+                        <h5>Jorge L. Perez</h5>
+                        <p>Networks Engineer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member text-center">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGtCRykbAduTg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1712685431115?e=1738800000&v=beta&t=0ZGna6DewlAWw2clR4WlFy-vbg7v_9BGzqXQBhmh_ck" class="rounded-circle mb-3" alt="Juliam">
+                        <h5>Juliam J. Rodriguez</h5>
+                        <p>Backend Engineer</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member text-center">
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGNT67LeLmsVA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696072955692?e=1738800000&v=beta&t=LurqoK7EBKGyBn1k_F9qQI7yXPFCpq5Tx4ndQT0wVag" class="rounded-circle mb-3" alt="Mark">
+                        <h5>Mark A. Toro</h5>
+                        <p>Full-Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  </body>
+</body>
 </html>
