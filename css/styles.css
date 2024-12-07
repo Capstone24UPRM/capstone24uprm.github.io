@@ -98,3 +98,25 @@ padding: 160px 0 60px; /* More top padding, less bottom */
     height: 3px;
     background: var(--primary-color);
 }
+
+.card.gallery-card {
+    width: 100%; /* Use Bootstrap's grid system for responsive width */
+    aspect-ratio: 1; /* Ensures a square layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures images don’t overflow */
+    background: #f5f5f5; /* Optional: Add a background color for contrast */
+    margin-bottom: 1rem;
+}
+
+.card.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    transition: transform 0.3s ease;
+}
+
+.card.gallery-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
